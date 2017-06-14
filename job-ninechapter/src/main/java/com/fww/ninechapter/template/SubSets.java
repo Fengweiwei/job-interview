@@ -33,7 +33,7 @@ public class SubSets {
     }
 
     public static void main(String[] args) {
-        int[]               nums    = {1, 2, 3, 4};
+        int[]               nums    = {1, 2, 2, 3};
         List<List<Integer>> subSets = getSubSets(nums);
         subSets.forEach(l -> {
             System.out.print("[");
