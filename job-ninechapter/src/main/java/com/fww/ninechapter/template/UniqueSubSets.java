@@ -1,6 +1,7 @@
 package com.fww.ninechapter.template;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -30,6 +31,7 @@ public class UniqueSubSets {
 
     public static void main(String[] args) {
         int[]               nums    = {1, 2, 2, 3};
+        Arrays.sort(nums);
         List<List<Integer>> subSets = getUniqueSubSets(nums);
         subSets.forEach(l -> {
             System.out.print("[");
