@@ -14,7 +14,7 @@ public class BinarySearch {
         int high = nums.length - 1;
         //low和high相邻或者相等的时候退出循环
         while (low + 1 < high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high - low) / 2;
             if (nums[mid] > key) {
                 high = mid;
             } else if (nums[mid] < key) {
