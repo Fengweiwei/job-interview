@@ -24,7 +24,14 @@ public class BinarySearch {
             }
         }
 
-        return nums[low] == key ? low : high;
+        if (nums[low] == key) {
+            return low;
+        }
+        if (nums[high] == key) {
+            return high;
+        }
+
+        return -1;
     }
 
 
